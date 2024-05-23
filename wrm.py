@@ -179,7 +179,7 @@ def main():
         endpoint += '/wsman?PSVersion=5.1.19041.1237'
         transport = 'ntlm'
         if options.k:
-            transport = 'keberos'
+            transport = 'kerberos'
         # TODO: handle NT hash authentication
         # TODO: Add possibility to use other SPN than HTTP
         if options.target_ip:
